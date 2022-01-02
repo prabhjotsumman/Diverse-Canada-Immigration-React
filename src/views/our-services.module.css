@@ -1,0 +1,261 @@
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container1 {
+  width: 100%;
+  height: 1703px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container2 {
+  width: 100%;
+  height: 1589px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container4 {
+  width: 100%;
+  height: 73px;
+  display: flex;
+  align-items: flex-start;
+}
+.container5 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-fourunits);
+  padding-right: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text {
+  color: var(--dl-color-secondary-700);
+  width: 1048px;
+  font-size: 2rem;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-unit);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.Card {
+  width: 987px;
+  height: 50%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  z-index: 1;
+  align-self: center;
+  box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius1);
+  margin-bottom: var(--dl-space-space-tripleunit);
+  flex-direction: column;
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0,0%,100%,.8);
+}
+.text02 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: none;
+  text-decoration: none;
+  background-image: linear-gradient(310deg,#7928ca,#ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text03 {
+  color: var(--dl-color-secondary-600);
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-doubleunit);
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.625;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-tripleunit);
+  margin-bottom: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-tripleunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.text22 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.text25 {
+  padding-top: var(--dl-space-space-unit);
+}
+.text26 {
+  font-weight: 700;
+}
+.Card1 {
+  width: 984px;
+  height: 684px;
+  display: flex;
+  padding: var(--dl-space-space-tripleunit);
+  z-index: 1;
+  align-self: center;
+  box-shadow: 0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius1);
+  margin-bottom: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  backdrop-filter: saturate(200%) blur(30px);
+  background-color: hsla(0,0%,100%,.8);
+}
+.text28 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: none;
+  text-decoration: none;
+  background-image: linear-gradient(310deg,#7928ca,#ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text29 {
+  color: var(--dl-color-secondary-600);
+  font-size: 1.15rem;
+  margin-top: var(--dl-space-space-doubleunit);
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.625;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-tripleunit);
+  margin-bottom: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-tripleunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.text43 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.text46 {
+  padding-top: var(--dl-space-space-unit);
+}
+.text47 {
+  font-weight: 700;
+}
+.text49 {
+  text-decoration: underline;
+}
+@media(max-width: 991px) {
+  .container2 {
+    height: 100%;
+  }
+  .text {
+    align-self: center;
+    text-align: center;
+  }
+  .Card {
+    width: 710px;
+    height: 100%;
+  }
+  .Card1 {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .container2 {
+    height: 1947px;
+  }
+  .text {
+    width: 638px;
+    margin-top: var(--dl-space-space-unit);
+  }
+  .Card {
+    width: 90%;
+    height: 100%;
+    align-items: center;
+  }
+  .text03 {
+    align-self: flex-start;
+    text-align: left;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .Card1 {
+    height: 100%;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-unitandahalfunit);
+  }
+  .text29 {
+    text-align: left;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+@media(max-width: 479px) {
+  .container1 {
+    height: 2155px;
+  }
+  .container2 {
+    height: 2388px;
+  }
+  .container5 {
+    width: 478px;
+  }
+  .text {
+    width: 358px;
+    text-align: center;
+  }
+  .Card {
+    width: auto;
+    height: auto;
+    margin-left: var(--dl-space-space-unit);
+    padding-top: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-unitandahalfunit);
+    padding-right: var(--dl-space-space-doubleunit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .text02 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .text03 {
+    margin-left: 0px;
+  }
+  .Card1 {
+    width: auto;
+    height: 1027px;
+    margin-top: var(--dl-space-space-unitandahalfunit);
+    margin-left: var(--dl-space-space-unitandahalfunit);
+    padding-top: var(--dl-space-space-tripleunit);
+    margin-right: var(--dl-space-space-unitandahalfunit);
+    padding-left: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-doubleunit);
+    padding-right: var(--dl-space-space-doubleunit);
+    padding-bottom: var(--dl-space-space-tripleunit);
+  }
+  .text28 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
