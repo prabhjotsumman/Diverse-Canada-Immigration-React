@@ -12,8 +12,16 @@ const OurServices = () => {
       <Helmet>
         <title>Our Services - Diverse Canada Immigration</title>
         <meta
+          name="description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
+        <meta
           property="og:title"
           content="Our Services - Diverse Canada Immigration"
+        />
+        <meta
+          property="og:description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
         />
       </Helmet>
       <Header rootClassName="rootClassName"></Header>
@@ -25,132 +33,147 @@ const OurServices = () => {
               <h4 className={styles['text']}>
                 <span>Our Services</span>
               </h4>
+              <span className={styles['text02']}>
+                <span>
+                  Contact us for your one on one assessment with Pardeep Kumar
+                  Bhatoa, RCIC and explore your options to migrate to Canada.
+                </span>
+                <br></br>
+                <span></span>
+              </span>
+              <span className={styles['text05']}>
+                <span className={styles['text06']}>Disclaimer</span>
+                <span>
+                  : Immigration programs are subjected to change at any time by
+                  IRCC. For up to date information visit
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <a
+                  href="https://www.canada.ca"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <span className={styles['text08']}>www.c</span>
+                  <span className={styles['text09']}>anada.ca</span>
+                </a>
+              </span>
             </div>
           </div>
           <div className={styles['Card']}>
-            <h1 className={styles['text02']}>
-              Immigrate to Canada â Permanent Residency Programs
-            </h1>
-            <span className={styles['text03']}>
-              <span>1. Visitor Visa</span>
-              <br></br>
-              <span>2. Express Entry</span>
-              <br></br>
-              <span>3. Family sponsorship</span>
-              <br></br>
-              <span>4. Provincial Nominee Programs (PNP)</span>
-              <br></br>
-              <span>5. Atlantic Immigration Pilot</span>
-              <br></br>
-              <span>6. Caregivers</span>
-              <br></br>
-              <span>7. Start-up Visa</span>
-              <br></br>
-              <span>8. Self-employed</span>
-              <br></br>
-              <span>9. Rural and Northern Immigration Pilot</span>
-              <br></br>
-              <span>10. Agri-Food Pilot</span>
-              <br></br>
-              <span>11. Health care workers permanent resident pathway</span>
-              <br></br>
-              <span>12. Temporary resident to permanent resident pathway.</span>
-              <br></br>
-              <span>13. PR Card Application</span>
-              <br></br>
-              <span>14. Citizenship Application</span>
-              <br></br>
-              <span>
-                15. Permanent residence pathways for Hong Kong residents
-              </span>
-              <br></br>
-              <span>16. Immigration Appeal Division (IAD) Hearings</span>
-              <br></br>
-              <span>17. Inadmissibility Hearings</span>
-              <br></br>
-              <span></span>
-            </span>
-            <span className={styles['text22']}>
-              <span>
-                Contact us for your one on one assessment with Pardeep Kumar
-                Bhatoa, RCIC and explore your options to migrate to Canada.
-              </span>
-              <br></br>
-              <span></span>
-            </span>
-            <span className={styles['text25']}>
-              <span className={styles['text26']}>Disclaimer</span>
-              <span>
-                : Immigration programs are subjected to change at any time by
-                IRCC. For up to date information visit www.Canada.ca
-              </span>
-            </span>
-          </div>
-          <div className={styles['Card1']}>
-            <h1 className={styles['text28']}>
+            <h1 className={styles['text10']}>
               For Visitors to Canada - Temporary residency programs
             </h1>
-            <span className={styles['text29']}>
-              <span>1. Visitor Visa</span>
+            <span className={styles['text11']}>
+              <span>â Visitor Visa</span>
               <br></br>
-              <span>2. Foreign business visitors</span>
+              <span>â Foreign business visitors</span>
               <br></br>
-              <span>3. Parent and Grandparent Super Visa</span>
+              <span>â Parent and Grandparent Super Visa</span>
               <br></br>
-              <span>â4. Study Permit/Student Visa</span>
+              <span>â Study Permit/Student Visa</span>
               <br></br>
-              <span>
-                5. Admission in designated learning institution (DLI).
-              </span>
+              <span>â Admission in designated learning institution (DLI).</span>
               <br></br>
-              <span>6. Study permit extension</span>
+              <span>â Study permit extension</span>
               <br></br>
               <span>
-                7. Open work permit for the spouse or common-law partner of a
+                â Open work permit for the spouse or common-law partner of a
                 student
               </span>
               <br></br>
-              <span>8. PGWP</span>
+              <span>â PGWP</span>
               <br></br>
-              <span>â9. Work permit</span>
+              <span>â Work permit</span>
               <br></br>
-              <span>10. Work permit extension</span>
+              <span>â Work permit extension</span>
               <br></br>
               <span>
-                11. Open work permit for the spouse or common-law partner of a
+                â Open work permit for the spouse or common-law partner of a
                 skilled worker
               </span>
               <br></br>
-              <span>12. Bridging open work permit (BOWP)</span>
+              <span>â Bridging open work permit (BOWP)</span>
               <br></br>
-              <span>13. Labour Market Impact Assessment (LMIA)</span>
+              <span>â Labour Market Impact Assessment (LMIA)</span>
+              <br></br>
+              <span>â</span>
+              <span>â Immigration Appeal Division (IAD) Hearings</span>
+              <br></br>
+              <span>â Inadmissibility Hearings</span>
+              <span></span>
             </span>
-            <span className={styles['text43']}>
+          </div>
+          <div className={styles['Card1']}>
+            <h1 className={styles['text30']}>
+              Immigrate to Canada â Permanent Residency Programs
+            </h1>
+            <span className={styles['text31']}>
+              <span>â Express Entry</span>
+              <br></br>
+              <span>â Family sponsorship</span>
+              <br></br>
+              <span>â Provincial Nominee Programs (PNP)</span>
+              <br></br>
+              <span>â Atlantic Immigration Pilot</span>
+              <br></br>
+              <span>â Caregivers</span>
+              <br></br>
+              <span>â Start-up Visa</span>
+              <br></br>
+              <span>â Self-employed</span>
+              <br></br>
+              <span>â Rural and Northern Immigration Pilot</span>
+              <br></br>
+              <span>â Agri-Food Pilot</span>
+              <br></br>
+              <span>â Health care workers permanent resident pathway</span>
+              <br></br>
+              <span>â Temporary resident to permanent resident pathway.</span>
+              <span></span>
+              <br></br>
               <span>
-                Contact us for your one on one assessment with Pardeep Kumar
-                Bhatoa, RCIC and explore your options to migrate to Canada.
+                â Permanent residence pathways for Hong Kong residents
               </span>
               <br></br>
               <span></span>
+              <span>â Immigration Appeal Division (IAD) Hearings</span>
+              <br></br>
+              <span>â Inadmissibility Hearings</span>
+              <br></br>
+              <span></span>
             </span>
-            <span className={styles['text46']}>
-              <span className={styles['text47']}>Disclaimer</span>
+          </div>
+          <div className={styles['Card2']}>
+            <h1 className={styles['text49']}>For Permanent Resident</h1>
+            <span className={styles['text50']}>
+              <span>â PR card Application</span>
+              <br></br>
               <span>
-                : Immigration programs are subjected to change at any time by
-                IRCC. For up to date information visit
+                â
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
                   }}
                 />
               </span>
-              <a
-                href="https://www.canada.ca"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span className={styles['text49']}>www.Canada.ca</span>
-              </a>
+              <span>Permanent Resident Travel Document (PRTD)</span>
+              <span></span>
+              <br></br>
+              <span>â Citizenship Application</span>
+              <br></br>
+              <span>â</span>
+              <span>â Immigration Appeal Division (IAD) Hearings</span>
+              <br></br>
+              <span>â Inadmissibility Hearings</span>
+              <span></span>
+              <br></br>
+              <span></span>
+              <span></span>
+              <span></span>
             </span>
           </div>
           <Footer rootClassName="rootClassName"></Footer>

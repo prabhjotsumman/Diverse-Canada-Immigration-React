@@ -17,9 +17,3 @@
   cursor: pointer;
   transform: scale(1.02);
 }
-
-@media(max-width: 479px) {
-  .rootClassName {
-    align-self: center;
-  }
-}

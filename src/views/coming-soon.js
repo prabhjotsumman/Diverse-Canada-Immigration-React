@@ -14,8 +14,16 @@ const ComingSoon = () => {
       <Helmet>
         <title>ComingSoon - Diverse Canada Immigration</title>
         <meta
+          name="description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
+        <meta
           property="og:title"
           content="ComingSoon - Diverse Canada Immigration"
+        />
+        <meta
+          property="og:description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
         />
       </Helmet>
       <Header></Header>

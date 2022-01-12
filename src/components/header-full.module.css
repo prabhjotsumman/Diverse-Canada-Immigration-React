@@ -31,6 +31,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.image {
+  width: 42px;
+  height: 41px;
+  object-fit: cover;
+}
 .navlink {
   font-weight: 600;
   margin-right: var(--dl-space-space-unit);

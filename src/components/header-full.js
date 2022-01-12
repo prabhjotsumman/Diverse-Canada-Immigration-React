@@ -1,15 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import PropTypes from 'prop-types'
+
 import PrimaryPinkButton from './primary-pink-button'
 import projectStyles from '../style.module.css'
 import styles from './header-full.module.css'
 
-const HeaderFull = () => {
+const HeaderFull = (props) => {
   return (
     <div className={styles['Header']}>
       <nav className={styles['Nav']}>
         <div className={styles['container']}>
+          <img
+            alt={props.image_alt}
+            src={props.image_src}
+            className={styles['image']}
+          />
           <Link
             to="/"
             className={` ${styles['navlink']} ${projectStyles['large']} `}
@@ -73,6 +80,16 @@ const HeaderFull = () => {
       </nav>
     </div>
   )
+}
+
+HeaderFull.defaultProps = {
+  image_src: '/playground_assets/maple-200w.png',
+  image_alt: 'image',
+}
+
+HeaderFull.propTypes = {
+  image_src: PropTypes.string,
+  image_alt: PropTypes.string,
 }
 
 export default HeaderFull

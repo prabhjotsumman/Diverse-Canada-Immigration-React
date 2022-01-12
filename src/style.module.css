@@ -42,6 +42,9 @@
   --dl-space-space-unitandahalfunit: 1.5rem;
   --dl-space-space-triplequarterunit: 0.75rem;
 }
+.teleport-show {
+  display: flex !important;
+}
 .button {
   color: var(--dl-color-secondary-400);
   display: inline-block;
@@ -51,6 +54,17 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
 }
 .textarea {
   color: var(--dl-color-secondary-400);
@@ -71,9 +85,6 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
-}
-.teleport-show {
-  display: flex !important;
 }
 .small {
   font-size: 0.875rem;

@@ -14,21 +14,11 @@ const Header = (props) => {
       className={` ${styles['Header']} ${styles[props.rootClassName]} `}
     >
       <div className={styles['container']}>
+        <Link to="/" className={styles['navlink']}>
+          <div className={styles['container1']}></div>
+        </Link>
         <nav className={styles['Nav']}>
-          <div className={styles['container1']}>
-            <div className={styles['container2']}>
-              <img
-                alt={props.image_alt1}
-                src={props.image_src1}
-                className={styles['image']}
-              />
-              <Link
-                to="/"
-                className={` ${styles['navlink']} ${projectStyles['large']} `}
-              >
-                Diverse Canada Immigration
-              </Link>
-            </div>
+          <div className={styles['container2']}>
             <div className={styles['Menu']}>
               <Link
                 to="/"
@@ -49,21 +39,27 @@ const Header = (props) => {
                 Our Services
               </Link>
               <Link
-                to="/our-services"
+                to="/study-permit"
                 className={` ${styles['navlink04']} ${projectStyles['large']} `}
               >
-                Form for Students
+                Study Permit
+              </Link>
+              <Link
+                to="/student-form"
+                className={` ${styles['navlink05']} ${projectStyles['large']} `}
+              >
+                Student Form
               </Link>
               <Link
                 to="/free-assessment"
-                className={` ${styles['navlink05']} ${projectStyles['large']} `}
+                className={` ${styles['navlink06']} ${projectStyles['large']} `}
               >
                 Free Assessment
               </Link>
             </div>
             <div className={styles['container3']}>
               <div className={styles['container4']}>
-                <Link to="/contact-us" className={styles['navlink06']}>
+                <Link to="/contact-us" className={styles['navlink07']}>
                   <PrimaryPinkButton
                     button="Contact Us"
                     className={styles['component']}
@@ -85,7 +81,7 @@ const Header = (props) => {
         <div className={styles['Top']}>
           <Link
             to="/"
-            className={` ${styles['navlink08']} ${projectStyles['large']} `}
+            className={` ${styles['navlink09']} ${projectStyles['large']} `}
           >
             Soft UI Design System
           </Link>
@@ -99,19 +95,19 @@ const Header = (props) => {
           <div className={styles['Menu1']}>
             <Link
               to="/"
-              className={` ${styles['navlink09']} ${projectStyles['large']} `}
+              className={` ${styles['navlink10']} ${projectStyles['large']} `}
             >
               Home
             </Link>
             <Link
               to="/about-us"
-              className={` ${styles['navlink10']} ${projectStyles['large']} `}
+              className={` ${styles['navlink11']} ${projectStyles['large']} `}
             >
               Profile
             </Link>
             <Link
               to="/coming-soon"
-              className={` ${styles['navlink11']} ${projectStyles['large']} `}
+              className={` ${styles['navlink12']} ${projectStyles['large']} `}
             >
               Coming Soon
             </Link>
@@ -127,14 +123,10 @@ const Header = (props) => {
 
 Header.defaultProps = {
   rootClassName: '',
-  image_alt1: 'image',
-  image_src1: '/playground_assets/maple-200w.png',
 }
 
 Header.propTypes = {
   rootClassName: PropTypes.string,
-  image_alt1: PropTypes.string,
-  image_src1: PropTypes.string,
 }
 
 export default Header

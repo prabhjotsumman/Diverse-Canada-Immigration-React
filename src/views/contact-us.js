@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import HeaderFull from '../components/header-full'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import styles from './contact-us.module.css'
 
@@ -12,18 +12,26 @@ const ContactUs = () => {
       <Helmet>
         <title>Contact Us - Diverse Canada Immigration</title>
         <meta
+          name="description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
+        <meta
           property="og:title"
           content="Contact Us - Diverse Canada Immigration"
         />
+        <meta
+          property="og:description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
       </Helmet>
-      <HeaderFull></HeaderFull>
       <div className={styles['Profile']}>
         <div className={styles['container1']}>
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfRsUMNwv8043I_QH-3cYSzJSTwQJHquatIqgHx4vI18EYuTA/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfOXKM_sqnVQ6S7znFnIQnhIodcC9psO9006tmaPOSReuRDmg/viewform?embedded=true"
             className={styles['iframe']}
           ></iframe>
         </div>
+        <Header rootClassName="rootClassName3"></Header>
       </div>
       <Footer rootClassName="rootClassName3"></Footer>
     </div>

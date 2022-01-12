@@ -5,8 +5,6 @@ import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
 import PrimaryPinkButton from '../components/primary-pink-button'
-import OutlineGrayButton from '../components/outline-gray-button'
-import OutlineBlackButton from '../components/outline-black-button'
 import ListItem from '../components/list-item'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
@@ -17,34 +15,43 @@ const Home = () => {
     <div className={styles['container']}>
       <Helmet>
         <title>Diverse Canada Immigration</title>
+        <meta
+          name="description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
         <meta property="og:title" content="Diverse Canada Immigration" />
+        <meta
+          property="og:description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
       </Helmet>
-      <Header></Header>
+      <Header rootClassName="rootClassName4"></Header>
       <div className={styles['Hero']}>
         <div className={styles['container01']}>
           <div className={styles['Card']}>
             <h1 className={styles['text']}>
-              Professional Canadian Immigration Consultant
+              {' '}
+              Regulated Canadian Immigration Consultant (RCIC)
             </h1>
-            <span className={` ${styles['text01']} ${projectStyles['lead']} `}>
-              Our Expert will guide you through the Canadian immigration
-              process, including work and study visas, citizenship, sponsorship
-              and so much more
+            <span className={styles['text01']}>
+              Our expert will guide you through the Canadian immigration
+              process, including work and study visas, citizenship, family
+              sponsorship and so much more
             </span>
             <div className={styles['container02']}>
               <div className={styles['container03']}>
                 <Link to="/contact-us" className={styles['navlink']}>
                   <PrimaryPinkButton
                     button="contact us"
-                    className={styles['component01']}
+                    className={styles['component1']}
                   ></PrimaryPinkButton>
                 </Link>
               </div>
-              <Link to="/our-services" className={styles['navlink1']}>
-                <OutlineGrayButton
-                  button="Our Services"
-                  className={styles['component02']}
-                ></OutlineGrayButton>
+              <Link
+                to="/our-services"
+                className={` ${styles['navlink1']} ${projectStyles['button']} ${projectStyles['buttonSmall']} `}
+              >
+                Our services
               </Link>
             </div>
           </div>
@@ -94,7 +101,7 @@ const Home = () => {
             <div className={styles['container08']}>
               <img
                 alt="image"
-                src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExMHx8bWVldGluZ3xlbnwwfHx8fDE2NDExMTQwNzE&amp;ixlib=rb-1.2.1&amp;w=600"
+                src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExMHx8bWVldGluZ3xlbnwwfHx8fDE2NDExMTQwNzE&amp;ixlib=rb-1.2.1&amp;h=1200"
                 className={styles['image2']}
               />
             </div>
@@ -106,56 +113,42 @@ const Home = () => {
               className={styles['image3']}
             />
             <div className={styles['container10']}>
-              <h3
-                className={` ${projectStyles['headingTwo']} ${styles['text11']} `}
+              <h2
+                className={` ${styles['text11']} ${projectStyles['headingTwo']} `}
               >
-                <span className={styles['text12']}>Let&apos;s connect !</span>
-              </h3>
+                <span className={styles['text12']}>Let&apos;s Connect!</span>
+              </h2>
+              <span className={styles['text13']}>
+                <br></br>
+                <span>
+                  Our process is transparent and done in compliance with the
+                  regulatory requirements of CICC. There is no hidden fee or
+                  surprises.
+                </span>
+                <br></br>
+                <span></span>
+                <br></br>
+                <span>
+                  We would be happy to assist you and we are just a call away.
+                </span>
+                <br></br>
+                <span></span>
+              </span>
               <p>
                 <span></span>
               </p>
-              <span>
-                <span>
-                  We are here to help you on every step till you come to Canada.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span></span>
-                <br></br>
-                <span>
-                  Let&apos;s remove all the roadblocks on your path and look at
-                  it like a new opportunity to come one step near to your goal.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  It&apos;s all about taking the first step till you make it to
-                  Canada.
-                </span>
-                <br></br>
-                <span></span>
-                <br></br>
-                <span>Let connect and we can discuss more.</span>
-              </span>
               <div className={styles['container11']}>
                 <Link to="/contact-us" className={styles['navlink2']}>
                   <PrimaryPinkButton
                     button="Contact Us"
-                    className={styles['component03']}
+                    className={styles['component2']}
                   ></PrimaryPinkButton>
                 </Link>
-                <Link to="/our-services" className={styles['navlink3']}>
-                  <OutlineGrayButton
-                    button="Our Services"
-                    className={styles['component04']}
-                  ></OutlineGrayButton>
+                <Link
+                  to="/our-services"
+                  className={` ${styles['navlink3']} ${projectStyles['button']} ${projectStyles['buttonSmall']} `}
+                >
+                  Our services
                 </Link>
               </div>
             </div>
@@ -165,9 +158,9 @@ const Home = () => {
       <section className={styles['Contaier']}>
         <div className={styles['container12']}>
           <h2
-            className={` ${styles['text26']} ${projectStyles['headingTwo']} `}
+            className={` ${styles['text22']} ${projectStyles['headingTwo']} `}
           >
-            <span className={styles['text27']}>
+            <span className={styles['text23']}>
               How we make your dream a reality ?
             </span>
           </h2>
@@ -183,16 +176,16 @@ const Home = () => {
                 <path d="M438.857 508.571l312 312c-79.429 80.571-190.286 130.286-312 130.286-242.286 0-438.857-196.571-438.857-438.857s196.571-438.857 438.857-438.857v435.429zM545.714 512h441.714c0 121.714-49.714 232.571-130.286 312zM950.857 438.857h-438.857v-438.857c242.286 0 438.857 196.571 438.857 438.857z"></path>
               </svg>
               <h1
-                className={` ${styles['text28']} ${projectStyles['headingOne']} `}
+                className={` ${styles['text24']} ${projectStyles['headingOne']} `}
               >
                 Search and Discover!
               </h1>
-              <span className={styles['text29']}>All the possibilities</span>
-              <Link to="/our-services" className={styles['navlink4']}>
-                <OutlineBlackButton
-                  button="Our Services"
-                  className={styles['component05']}
-                ></OutlineBlackButton>
+              <span className={styles['text25']}>All the possibilities</span>
+              <Link
+                to="/our-services"
+                className={` ${styles['navlink4']} ${projectStyles['button']} ${projectStyles['buttonSmall']} `}
+              >
+                Our services
               </Link>
             </div>
           </div>
@@ -203,50 +196,82 @@ const Home = () => {
             ></ListItem>
             <ListItem
               title="2. Discover"
-              description="We will shortlist all the pathways that applies to you in person and choose the best possible way for you."
+              description="We will shortlist all the pathways that applies particularly to you and choose the best possible way for you."
             ></ListItem>
             <ListItem
               title="3. Apply"
-              description="We will guide you on every step and things that need to be done to make your journey to  Canada as smooth as possible."
+              description="We will provide innovative and sustainable strategies for you to make your immigration journey to Canada easy and enjoyable."
             ></ListItem>
-            <Link to="/our-services" className={styles['navlink5']}>
-              <OutlineGrayButton
-                button="Our Services"
-                rootClassName="rootClassName"
-                className={styles['component09']}
-              ></OutlineGrayButton>
+            <Link
+              to="/our-services"
+              className={` ${styles['navlink5']} ${projectStyles['buttonSmall']} ${projectStyles['button']} `}
+            >
+              Our services
             </Link>
           </div>
         </div>
         <div className={styles['Divider']}></div>
         <div className={styles['container18']}>
           <div className={styles['container19']}>
-            <ListItem
-              title="Can't see what you are looking for ?"
-              description="Please contact us if you have something in particular "
-              rootClassName="rootClassName"
-            ></ListItem>
-          </div>
-          <div className={styles['container20']}>
-            <div className={styles['container21']}></div>
-            <div className={styles['container22']}>
-              <svg viewBox="0 0 1152 1024" className={styles['icon2']}>
-                <path d="M1088 901.166c0 45.5 26.028 84.908 64 104.184v15.938c-10.626 1.454-21.472 2.224-32.5 2.224-68.008 0-129.348-28.528-172.722-74.264-26.222 6.982-54.002 10.752-82.778 10.752-159.058 0-288-114.616-288-256s128.942-256 288-256c159.058 0 288 114.616 288 256 0 55.348-19.764 106.592-53.356 148.466-6.824 14.824-10.644 31.312-10.644 48.7zM512 0c278.458 0 504.992 180.614 511.836 405.52-49.182-21.92-103.586-33.52-159.836-33.52-95.56 0-185.816 33.446-254.138 94.178-70.846 62.972-109.862 147.434-109.862 237.822 0 44.672 9.544 87.888 27.736 127.788-5.228 0.126-10.468 0.212-15.736 0.212-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"></path>
-              </svg>
-              <h1
-                className={` ${styles['text30']} ${projectStyles['headingOne']} `}
+            <h2
+              className={` ${styles['text26']} ${projectStyles['headingTwo']} `}
+            >
+              <span className={styles['text27']}>
+                Protect yourself fromÂ  immigration fraud
+              </span>
+            </h2>
+            <span>
+              <span>Find out if your representative is authorised.</span>
+              <br></br>
+              <span></span>
+              <br></br>
+              <span>
+                Citizenship or immigration consultants must be a member of the
+                College of Immigration and Citizenship Consultants.
+              </span>
+              <br></br>
+              <span></span>
+              <br></br>
+              <span>
+                Click here to verify your immigration consultantâs status
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+              <br></br>
+              <span></span>
+              <br></br>
+              <a
+                href="https://www.college-ic.ca/protecting-the-public/find-an-immigration-consultant"
+                target="_blank"
+                rel="noreferrer noopener"
               >
-                Talk and Meet!
-              </h1>
-              <span className={styles['text31']}>and get one step closer</span>
+                <span className={styles['text39']}>
+                  https://www.college-ic.ca/protecting-the-public/find-an-immigration-consultant
+                </span>
+              </a>
+              <span></span>
+              <br></br>
+              <span></span>
+            </span>
+            <div className={styles['container20']}>
               <Link to="/contact-us" className={styles['navlink6']}>
                 <PrimaryPinkButton
                   button="Contact Us"
-                  className={styles['component11']}
+                  className={styles['component6']}
                 ></PrimaryPinkButton>
+              </Link>
+              <Link
+                to="/our-services"
+                className={` ${styles['navlink7']} ${projectStyles['button']} ${projectStyles['buttonSmall']} `}
+              >
+                Our services
               </Link>
             </div>
           </div>
+          <div className={styles['container21']}></div>
         </div>
       </section>
       <Footer rootClassName="rootClassName1"></Footer>

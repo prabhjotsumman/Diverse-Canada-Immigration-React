@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import HeaderFull from '../components/header-full'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
 import styles from './about-us.module.css'
@@ -13,11 +13,18 @@ const AboutUs = () => {
       <Helmet>
         <title>About Us - Diverse Canada Immigration</title>
         <meta
+          name="description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
+        <meta
           property="og:title"
           content="About Us - Diverse Canada Immigration"
         />
+        <meta
+          property="og:description"
+          content="Diverse Canada Immigration is the immigration consultant, Pardeep Kumar Bhatoa website and allows every person or student who want to come to Canada."
+        />
       </Helmet>
-      <HeaderFull></HeaderFull>
       <div className={styles['Profile']}>
         <div className={styles['container1']}>
           <div className={styles['container2']}>
@@ -34,7 +41,7 @@ const AboutUs = () => {
           </div>
           <span className={` ${styles['text05']} ${projectStyles['medium']} `}>
             <span>
-              Diverse Canada Immigration Services Inc is an immigration
+              Diverse Canada Immigration Services Inc. is an immigration
               consultancy firm based in Alberta, Canada with focus on Canadian
               Immigration related services including but not limited to Canadian
               Visitor Visa, Study Permit/Student Visa, LMIAs, Family
@@ -81,23 +88,28 @@ const AboutUs = () => {
             <span></span>
           </span>
         </div>
-        <img
-          alt="image"
-          src="/playground_assets/maple-200w.png"
-          className={styles['image']}
-        />
+        <Header rootClassName="rootClassName1"></Header>
       </div>
       <div className={styles['Profile1']}>
-        <div className={styles['container4']}></div>
-        <div className={styles['container5']}>
+        <div className={styles['container4']}>
+          <div className={styles['container5']}></div>
           <div className={styles['container6']}>
-            <h4 className={styles['text21']}>Pradeep Kumar Bhatoa</h4>
+            <img
+              alt="image"
+              src="/playground_assets/capic-accpi-logo-300h.jpeg"
+              className={styles['image']}
+            />
+          </div>
+        </div>
+        <div className={styles['container7']}>
+          <div className={styles['container8']}>
+            <h4 className={styles['text21']}>Pardeep Kumar Bhatoa, RCIC</h4>
           </div>
           <span className={styles['text22']}>
             <span>
               Owner and Founder of Diverse Canada Immigration Services Inc. is a
-              Professional Engineer and a Regulated Canadian Immigration
-              Consultant (RCIC) R709025.
+              Professional Engineer (P. Eng.) with Master of Engineering (MEng)
+              and a Regulated Canadian Immigration Consultant (RCIC) R709025.
               <span
                 dangerouslySetInnerHTML={{
                   __html: ' ',
@@ -108,7 +120,19 @@ const AboutUs = () => {
             <span className={styles['text25']}>
               He is a member in good standing with The College of Immigration
               and Citizenship Consultants (CICC).
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
             </span>
+            <span>
+              He is also a member in good standing of the Canadian Association
+              of Professional Immigration Consultants (CAPIC) R2118968.
+            </span>
+            <br></br>
+            <span></span>
+            <span className={styles['text28']}></span>
             <span></span>
             <br></br>
             <span></span>
@@ -119,12 +143,12 @@ const AboutUs = () => {
               working with the public and understanding their needs and anxiety
               when it comes to working with The Act and The Regulations. His
               journey to Canada started back in 2010 as an International student
-              and has gone through immigration process by himself to become a
+              and had gone through immigration process by himself to become a
               Canadian Citizen. He is passionate about immigration and now, he
               is working as a Regulated Canadian Immigration Consultant (RCIC)
               with the aim to help people achieve their immigration goals. He
               completed his Immigration Consultant Diploma with Honours from
-              Ashton College, BC.â
+              Ashton College, British Columbia, Canada.
             </span>
             <br></br>
             <span></span>
